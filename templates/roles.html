@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Rôles</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script>
+        function showConfirmation(message) {
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        OUIGLASS FACTPRO V4 By BRIAN
+    </header>
+    <main>
+        <h1>Gestion des Rôles</h1>
+        <form method="POST" action="/roles/confirm" onsubmit="showConfirmation('Action en cours...');">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="text" name="role" placeholder="Rôle" required>
+            <input type="text" name="code" placeholder="Code" required>
+            <button type="submit" name="action" value="add">Ajouter</button>
+            <button type="submit" name="action" value="delete">Supprimer</button>
+        </form>
+        <h2>Liste des utilisateurs</h2>
+        <ul>
+            {% for user in users %}
+            <li>{{ user[1] }} - {{ user[2] }} - {{ user[3] }}</li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        S.A.S Normandie Vitrages - RD 926 - 94 rue Nizas - Fauville-en-Caux, 76640 TERRES-DE-CAUX
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUIGLASS FACTPRO V4 By BRIAN</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script>
+        document.body.style.zoom = "75%";
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="../static/logo-OGpro.png" alt="Logo OUIGLASS" style="height: 80px; float: left; margin-right: 20px;">
+            OUIGLASS FACTPRO V4 By BRIAN
+        </div>
+    </header>
+    <div class="sidebar">
+        <a href="/dashboard"><i class="fa fa-home"></i> Tableau de bord</a>
+        <a href="/clients"><i class="fa fa-users"></i> Clients</a>
+        <a href="/factures"><i class="fa fa-file-invoice"></i> Factures</a>
+        <a href="/services"><i class="fa fa-cogs"></i> Services</a>
+        <a href="/stock"><i class="fa fa-box"></i> Stock</a>
+        <a href="/analytics"><i class="fa fa-chart-line"></i> Analytiques</a>
+    </div>
+    <main>
+        <h1>Bienvenue dans le Dashboard</h1>
+        <div class="dashboard">
+            <div class="card orange">
+                <h3>Indicateurs Clés</h3>
+                <p>CA année 2025 : 372,3 k€</p>
+                <button>Voir détails</button>
+            </div>
+            <div class="card blue">
+                <h3>Ajout Rapide</h3>
+                <button>Contact</button>
+                <button>Devis</button>
+                <button>Facture/Vente</button>
+            </div>
+            <div class="card orange">
+                <h3>Fil d'Actualités</h3>
+                <p>Dernières mises à jour et actions.</p>
+                <button>Tout voir</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        S.A.S Normandie Vitrages - RD 926 - 94 rue Nizas - Fauville-en-Caux, 76640 TERRES-DE-CAUX
+    </footer>
+    <script>
+        // Animation au clic des boutons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.style.backgroundColor = '#ff4500';
+                setTimeout(() => {
+                    button.style.backgroundColor = '';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>

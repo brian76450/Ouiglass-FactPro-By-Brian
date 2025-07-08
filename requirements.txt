@@ -1,0 +1,6 @@
+flask
+flask-session
+flask-fontawesome
+matplotlib
+pandas
+reportlab
