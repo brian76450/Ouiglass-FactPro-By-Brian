@@ -1,6 +1,7 @@
 /* Thème moderne avec couleurs orange, noir, et bleu marine */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Modernisation du design */
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #000000, #1a1a1a);

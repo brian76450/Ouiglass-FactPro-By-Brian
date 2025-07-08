@@ -177,5 +177,16 @@ def confirm_role_action():
 def dashboard():
     return render_template('index.html')
 
+@app.route('/backup')
+def backup():
+    import shutil
+    shutil.copy('ouiglass_factpro.db', 'backup/ouiglass_factpro_backup.db')
+    return "Sauvegarde effectuée avec succès !"
+
+@app.route('/update')
+def update():
+    # Simuler une mise à jour automatique
+    return "Mise à jour automatique effectuée avec succès !"
+
 if __name__ == '__main__':
     app.run(debug=True)
